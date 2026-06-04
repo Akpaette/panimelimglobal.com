@@ -1,0 +1,36 @@
+# PANIM ELIM GLOBAL RESOURCES — .htaccess
+# Prevents server errors and ensures clean URL handling
+
+# Disable directory browsing
+Options -Indexes
+
+# Allow .html files to be served as default
+DirectoryIndex index.html
+
+# Set correct MIME types
+AddType text/html .html
+AddType image/png .png
+AddType image/jpeg .jpg .jpeg
+
+# Enable compression for faster loading
+<IfModule mod_deflate.c>
+    AddOutputFilterByType DEFLATE text/html text/plain text/xml text/css text/javascript application/javascript
+</IfModule>
+
+# Cache static assets
+<IfModule mod_expires.c>
+    ExpiresActive On
+    ExpiresByType image/png "access plus 1 year"
+    ExpiresByType image/jpeg "access plus 1 year"
+    ExpiresByType text/css "access plus 1 month"
+    ExpiresByType application/javascript "access plus 1 month"
+</IfModule>
+
+# Security headers
+<IfModule mod_headers.c>
+    Header set X-Content-Type-Options "nosniff"
+    Header set X-Frame-Options "SAMEORIGIN"
+</IfModule>
+
+# Error pages (optional)
+# ErrorDocument 404 /index.html
