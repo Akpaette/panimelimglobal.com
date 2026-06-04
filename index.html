@@ -75,6 +75,7 @@ section { padding: 100px 5%; }
 
 #about { background: #0e0e20; }
 .about-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 4rem; align-items: center; max-width: 1100px; margin: 0 auto; }
+.about-image img { max-width: 100%; height: auto; }
 .about-image { position: relative; }
 .about-image img { border-radius: 8px; box-shadow: 0 20px 60px rgba(0,0,0,0.4); }
 .about-image::before { content: ''; position: absolute; inset: -8px; border: 1px solid rgba(200,169,110,0.2); border-radius: 12px; z-index: -1; }
@@ -219,7 +220,7 @@ section { padding: 100px 5%; }
 <section id="about">
   <div class="section-header fade-in"><div class="label">About Us</div><h2>Who We Are</h2><div class="divider"></div><p>Panim Elim Global Resources Limited is a forward-thinking company committed to transforming lives and industries through innovation.</p></div>
   <div class="about-grid">
-    <div class="about-image fade-in"><img src="assets/pegl_logo.png" alt="Panim Elim Global Resources" width="600" onerror="this.style.opacity='0.3'"></div>
+    <div class="about-image fade-in"><img src="assets/pegl_logo.png" alt="Panim Elim Global Resources"  onerror="this.style.opacity='0.3'"></div>
     <div class="about-text fade-in">
       <h3>Driven by Innovation. Committed to Impact.</h3>
       <p>Panim Elim Global Resources Limited is a dynamic enterprise at the intersection of technology, real estate, youth development, and agriculture. We were founded on the belief that exceptional solutions — the kind that have never been delivered before — are the only kind worth building.</p>
@@ -256,20 +257,20 @@ section { padding: 100px 5%; }
       <div class="highlights"><span class="tag">CEO</span><span class="tag">Co-Founder</span></div>
     </div>
     <div class="team-card fade-in">
+      <div class="team-avatar"><img src="assets/team_kingsley.jpg" alt="Kingsley Otto"></div>
+      <h3>Kingsley Otto</h3>
+      <div class="role">CTO & Co-Founder</div>
+      <p class="bio">A seasoned software engineer, DevOps specialist, and cryptocurrency/blockchain expert. A Chemistry graduate from the University of Uyo, he brings deep technical expertise across software engineering, DevOps, and digital asset systems.</p>
+      <p class="credentials">BSc Chemistry (University of Uyo) · Software Engineer · DevOps Operator · Blockchain/Crypto Expert</p>
+      <div class="highlights"><span class="tag">CTO</span><span class="tag">Software Engineer</span><span class="tag">DevOps</span></div>
+    </div>
+    <div class="team-card fade-in">
       <div class="team-avatar">👨‍💼</div>
-      <h3>God’sgift Sunday Akpaette</h3>
+      <h3>God'sgift Sunday</h3>
       <div class="role">COO, Project Manager & Operations Lead</div>
       <p class="bio">Strategic operations leader driving Panim Elim’s mission across digital innovation, youth empowerment, real estate, and agriculture. Committed to scaling exceptional, never-before-delivered solutions.</p>
       <p class="credentials">Operations Strategy · Business Growth</p>
       <div class="highlights"><span class="tag">COO</span><span class="tag">Strategy</span></div>
-    </div>
-    <div class="team-card fade-in">
-      <div class="team-avatar"><img src="assets/team_kingsley.jpg" alt="Kingsley Otto"></div>
-      <h3>Kingsley Otto</h3>
-      <div class="role">CTO & Co-Founder</div>
-      <p class="bio">A seasoned software engineer, DevOps specialist, and cryptocurrency/blockchain expert known as <strong>Megastly</strong> in the open-source community. A Chemistry graduate from the University of Uyo, he brings deep technical expertise across software engineering, DevOps, and digital asset systems.</p>
-      <p class="credentials">BSc Chemistry (University of Uyo) · Software Engineer · DevOps Operator · Blockchain/Crypto Expert</p>
-      <div class="highlights"><span class="tag">CTO</span><span class="tag">Software Engineer</span><span class="tag">DevOps</span><span class="tag">Megastly</span></div>
     </div>
   </div>
 </section>
